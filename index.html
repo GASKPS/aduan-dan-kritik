@@ -3,174 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Link Center - GA Services</title>
+<title>Dashboard Fasilitas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        min-height: 100vh;
-        background: linear-gradient(135deg, #eef4ff, #f7f9fc);
-        color: #1f2937;
-    }
-    header {
-        background: linear-gradient(135deg, #123b73, #1769aa);
-        color: white;
-        padding: 28px 6%;
-        box-shadow: 0 4px 18px rgba(0,0,0,.12);
-    }
-    header h1 { font-size: 28px; margin-bottom: 6px; }
-    header p { opacity: .85; }
-    .container { width: min(1100px, 92%); margin: 35px auto; }
-    .toolbar {
-        display: flex;
-        gap: 12px;
-        margin-bottom: 24px;
-        flex-wrap: wrap;
-    }
-    .search {
-        flex: 1;
-        min-width: 220px;
-        padding: 13px 16px;
-        border: 1px solid #d6dce5;
-        border-radius: 12px;
-        outline: none;
-        background: white;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-    }
-    .card {
-        background: white;
-        border-radius: 18px;
-        padding: 22px;
-        box-shadow: 0 8px 25px rgba(31,41,55,.08);
-        border: 1px solid #e8edf3;
-    }
-    .card h2 { font-size: 20px; margin-bottom: 16px; color: #123b73; }
-    .sub-buttons { display: grid; gap: 10px; }
-    .link-btn {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        text-decoration: none;
-        padding: 12px 14px;
-        border-radius: 10px;
-        background: #f3f7fc;
-        color: #1e3a5f;
-        border: 1px solid #e0e8f2;
-        transition: .2s;
-        cursor: pointer;
-    }
-    .link-btn:hover {
-        transform: translateY(-2px);
-        background: #e8f1fb;
-        border-color: #b9d0ea;
-    }
-    .empty {
-        text-align: center;
-        padding: 40px;
-        color: #6b7280;
-        display: none;
-    }
-    footer {
-        text-align: center;
-        color: #6b7280;
-        padding: 30px;
-        font-size: 13px;
-    }
-    @media (max-width: 600px) {
-        header h1 { font-size: 23px; }
-        .container { margin-top: 22px; }
-    }
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#1d2671,#c33764);
+  min-height:100vh;
+  margin:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+}
+.container{
+  width:100%;
+  max-width:420px;
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(10px);
+  border-radius:20px;
+  padding:26px;
+  box-shadow:0 8px 30px rgba(0,0,0,.35);
+}
+.logos{
+  display:flex;
+  justify-content:center;
+  margin-bottom:18px;
+}
+.logos img{
+  width:80%;
+  max-width:400px;
+  height:auto;
+  border-radius:10px;
+  display:block;
+}
+h1{text-align:center;font-weight:700;margin:6px 0}
+p{text-align:center;font-size:14px;opacity:.75;margin-bottom:24px}
+.menu{display:grid;gap:14px}
+.card{
+  background:rgba(255,255,255,.22);
+  padding:18px;
+  border-radius:15px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  cursor:pointer;
+  transition:.15s;
+}
+.card:hover{background:rgba(255,255,255,.3);transform:translateY(-2px)}
+.card:active{transform:scale(.97)}
+.icon-wrap{
+  width:46px;height:46px;
+  border-radius:50%;
+  background:rgba(255,255,255,.25);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-shrink:0;
+}
+.icon{width:24px;height:24px}
+.title{font-weight:600;font-size:15px;display:block}
+.desc{font-weight:400;font-size:12px;opacity:.8;display:block;margin-top:2px}
+footer{text-align:center;margin-top:22px;font-size:12px;opacity:.65}
 </style>
 </head>
+
 <body>
+<div class="container">
 
-<header>
-    <h1>📌 Link Center</h1>
-    <p>Pusat akses link administrasi dan layanan</p>
-</header>
+<!-- LOGO -->
+<div class="logos">
+  <img src="logo-perusahaan.png" alt="Logo Perusahaan">
+</div>
 
-<main class="container">
-    <div class="toolbar">
-        <input id="search" class="search" type="text" placeholder="🔎 Cari menu atau sub menu...">
+<h1>Dashboard Fasilitas</h1>
+<p>Silakan pilih layanan</p>
+
+<!-- MENU -->
+<div class="menu">
+
+  <div class="card" onclick="location.href='https://forms.gle/uwBUM1tEZujgmLaDA'">
+    <div class="icon-wrap">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86z"/>
+        <line x1="12" y1="9" x2="12" y2="13"/>
+        <line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
     </div>
+    <div class="text">
+      <span class="title">Aduan</span>
+      <span class="desc">Sampaikan aduan terkait fasilitas</span>
+    </div>
+  </div>
 
-    <section id="menuGrid" class="grid">
+  <div class="card" onclick="location.href='https://forms.gle/VNbBCPu6H6U7XjQj9'">
+    <div class="icon-wrap">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    </div>
+    <div class="text">
+      <span class="title">Kritik & Saran</span>
+      <span class="desc">Kirim kritik dan saran untuk layanan</span>
+    </div>
+  </div>
 
-        <div class="card menu-card">
-            <h2>🕒 Absensi</h2>
-            <div class="sub-buttons">
-                <a class="link-btn" href="https://contoh.com/absensi" target="_blank">
-                    <span>Absensi Karyawan</span><span>↗</span>
-                </a>
-                <a class="link-btn" href="https://contoh.com/rekap-absensi" target="_blank">
-                    <span>Rekap Absensi</span><span>↗</span>
-                </a>
-                <a class="link-btn" href="https://contoh.com/izin" target="_blank">
-                    <span>Pengajuan Izin</span><span>↗</span>
-                </a>
-            </div>
-        </div>
+</div>
 
-        <div class="card menu-card">
-            <h2>📊 Data COS</h2>
-            <div class="sub-buttons">
-                <a class="link-btn" href="https://contoh.com/data-cos" target="_blank">
-                    <span>Data COS</span><span>↗</span>
-                </a>
-                <a class="link-btn" href="https://contoh.com/rekap-cos" target="_blank">
-                    <span>Rekap COS</span><span>↗</span>
-                </a>
-                <a class="link-btn" href="https://contoh.com/jadwal-cos" target="_blank">
-                    <span>Jadwal COS</span><span>↗</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="card menu-card">
-            <h2>👆 Form Finger</h2>
-            <div class="sub-buttons">
-                <a class="link-btn" href="https://contoh.com/form-finger" target="_blank">
-                    <span>Form Finger</span><span>↗</span>
-                </a>
-                <a class="link-btn" href="https://contoh.com/rekap-finger" target="_blank">
-                    <span>Rekap Form Finger</span><span>↗</span>
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <div id="empty" class="empty">Menu tidak ditemukan.</div>
-</main>
-
-<footer>
-    Link Center • Silakan ganti URL contoh dengan link sebenarnya.
-</footer>
-
-<script>
-const search = document.getElementById("search");
-const cards = document.querySelectorAll(".menu-card");
-const empty = document.getElementById("empty");
-
-search.addEventListener("input", function () {
-    const keyword = this.value.toLowerCase().trim();
-    let visible = 0;
-
-    cards.forEach(card => {
-        const text = card.innerText.toLowerCase();
-        const show = text.includes(keyword);
-        card.style.display = show ? "" : "none";
-        if (show) visible++;
-    });
-
-    empty.style.display = visible ? "none" : "block";
-});
-</script>
-
+<footer>© 2026 Sistem Fasilitas</footer>
+</div>
 </body>
 </html>
